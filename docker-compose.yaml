@@ -1,7 +1,12 @@
-version: '3'
+version: '3.8'
 services:
   mc:
     build:
       context: .
+    volumes:
+      - "./data/world:/var/data/minecraft/world:rw"
+      - "./data/libraries:/var/data/minecraft/libraries:rw"
+      - "./data/versions:/var/data/minecraft/versions:rw"
+      - "./data/logs:/var/data/minecraft/logs:rw"
     expose: [25565]
     ports: [25565:25565]
