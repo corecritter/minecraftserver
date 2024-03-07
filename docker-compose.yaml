@@ -1,4 +1,7 @@
 version: '3'
 services:
   mc:
+    build:
+      context: .
     expose: [25565]
+    ports: [25565:25565]
