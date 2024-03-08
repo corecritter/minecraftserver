@@ -4,6 +4,6 @@ services:
     build:
       context: .
     volumes:
-      - ./data:/var/data/minecraft:rw
+      - ./data:/var/minecraft:rw
     expose: [25565]
     ports: [25565:25565]
