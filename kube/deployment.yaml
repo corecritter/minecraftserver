@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: mc
+  name: mc-app
+spec:
+  selector:
+    matchLabels:
+      app: mc-app
+  template:
+    metadata:
+      labels:
+        app: mc-app
+    spec:
+      containers:
+      - name: mc-app
+        image: localhost:32000/mc:latest
+        resources:
+          limits:
+            memory: "5Gi"
+        ports:
+        - containerPort: 25565

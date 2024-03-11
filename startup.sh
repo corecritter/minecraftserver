@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 cp /var/install/eula.txt /var/minecraft/eula.txt
 cp /var/install/server.jar /var/minecraft/server.jar
