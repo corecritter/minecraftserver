@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mc-app-ingress
+  namespace: mc
+  labels:
+    name: mc-app-ingress
+spec:
+  rules:
+    - http:
+        paths:
+        - path: "/"
+          pathType: Prefix
+          backend:
+            service:
+              name: mc-app
+              port: 
+                number: 25565

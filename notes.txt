@@ -1,6 +1,14 @@
-on pi, "microk8s config" prints kubeconfig
-microk8s enable registry
-sudo microk8s enable registry --size 40Gi
+Installing microk8s
+sudo nano /boot/firmware/cmdline.txt
+cgroup_enable=memory cgroup_memory=1 //add to cmdline.txt
+sudo reboot
+sudo snap install microk8s --classic
+sudo microk8s start
+microk8s config // prints kubeconfig
+microk8s enable registry // enable docker registry
+sudo microk8s enable registry --size 40Gi // enable registry with size
+microk8s enable ingress //enable ingress
+
 docker build ./ -t 192.168.50.17:32000/mc:latest
 docker push 192.168.50.17:32000/mc:latest  
 add this to DockerEngine settings "insecure-registries": ["192.168.50.17:32000"]
