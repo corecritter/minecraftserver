@@ -1,3 +1,4 @@
+#using arm64 architecture. Take this out to default to os
 FROM --platform=linux/arm64 ubuntu:24.04
 
 RUN apt-get update
