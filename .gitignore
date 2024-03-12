@@ -1,2 +1,5 @@
 
 /data
+settings/ops.json
+settings/server.properties
+settings/whitelist.json
