@@ -9,6 +9,6 @@ microk8s enable registry // enable docker registry
 sudo microk8s enable registry --size 40Gi // enable registry with size
 microk8s enable ingress //enable ingress
 
-docker build ./ -t 192.168.50.17:32000/mc:latest
-docker push 192.168.50.17:32000/mc:latest  
+docker build ./ -t 192.168.50.203:32000/mc:latest
+docker push 192.168.50.203:32000/mc:latest  
 add this to DockerEngine settings "insecure-registries": ["192.168.50.17:32000"]

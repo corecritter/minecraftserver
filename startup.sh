@@ -6,7 +6,7 @@ cp /var/install/server.jar /var/minecraft/server.jar
 for filename in /var/settings/*; do
     if ! test -f /var/minecraft/$filename; then
         echo "copying $filename because it does not exist"
-        cp $filename file_name=$(basename "$filename")
+        cp $filename /var/minecraft/$(basename "$filename")
     fi
 done
 
