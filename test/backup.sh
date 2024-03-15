@@ -29,7 +29,7 @@ for dir in "${directories[@]}"; do
 done
 
 max=2
-if [[ $total_elements -gt $max ]] then
+if [[ $total_elements -gt $max ]]; then
     dir_to_delete=$(echo "$min_date_time" | tr ' ' '_')
     dir_to_delete=$(echo "$dir_to_delete" | tr ':' '=')
     echo "Deleting: $FTP_URL$dir_to_delete"

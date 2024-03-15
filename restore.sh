@@ -26,6 +26,6 @@ for dir in "${directories[@]}"; do
 done
 
 max=1
-if [[ $total_elements -gt $max ]] then\
+if [[ $total_elements -gt $max ]]; then
 
 fi
