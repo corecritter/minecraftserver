@@ -4,6 +4,7 @@ FROM --platform=linux/arm64 ubuntu:24.04
 RUN apt update
 RUN apt upgrade -y
 RUN apt install curl -y
+RUN apt install wget -y
 #RUN apt-get install default-jre -y
 RUN apt install default-jdk -y
 RUN mkdir /var/install
