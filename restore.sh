@@ -3,8 +3,6 @@ echo "Attempting to restore from backup"
 FTP_SERVER=""
 FTP_USER=""
 FTP_PASSWORD=""
-
-# URL to list directories (change the path as needed)
 FTP_URL="ftp://${FTP_SERVER}/ESD-USB/backup/"
 
 # Use curl to retrieve the directory listing and store it in an array
