@@ -1,5 +1,7 @@
 #!/bin/bash
 
+/var/restore.sh
+
 cp /var/install/eula.txt /var/minecraft/eula.txt
 cp /var/install/server.jar /var/minecraft/server.jar
 
@@ -11,4 +13,4 @@ for filename in /var/settings/*; do
 done
 
 cd /var/minecraft
-java -Xmx1024M -Xms1024M -jar server.jar
+/var/backup.sh & java -Xmx4096M -Xms4096M -jar server.jar && fg
