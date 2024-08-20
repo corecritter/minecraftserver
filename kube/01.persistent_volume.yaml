@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ftp-pv
+  namespace: mc
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: manual
+  csi:
+    driver: "ftp.csi.k8s.io"
+    volumeHandle: "ftp-volume"
+    volumeAttributes:
+      host: "192.168.50.215"
+      port: "21"
+      username: "bobby"
+      password: "savel"
+      remotePath: "/SAMDATA/backup"

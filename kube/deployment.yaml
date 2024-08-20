@@ -18,5 +18,12 @@ spec:
         resources:
           limits:
             memory: "5Gi"
+        volumeMounts:
+          - name: ftp-volume
+            mountPath: /var/minecraft
         ports:
         - containerPort: 25565
+      volumes:
+        - name: ftp-volume
+          persistentVolumeClaim:
+            claimName: ftp-pvc
