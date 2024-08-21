@@ -19,11 +19,11 @@ spec:
           limits:
             memory: "5Gi"
         volumeMounts:
-          - name: ftp-volume
-            mountPath: /var/minecraft
+          - name: nfs-volume
+            mountPath: /var/backup
         ports:
         - containerPort: 25565
       volumes:
-        - name: ftp-volume
+        - name: nfs-volume
           persistentVolumeClaim:
-            claimName: ftp-pvc
+            claimName: nfs-pvc

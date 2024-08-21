@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: ftp-pvc
+  name: nfs-pvc
   namespace: mc
 spec:
   accessModes:
     - ReadWriteMany
-  storageClassName: manual
+  storageClassName: nfs-csi
   resources:
     requests:
       storage: 1Gi
