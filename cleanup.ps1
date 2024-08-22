@@ -1,3 +1,5 @@
+#This will cleanup unused PVs. It is destructive and I was only using this for debugging cleanup
+
 $pvs = kubectl get pv --no-headers
 
 foreach($pv in $pvs) {

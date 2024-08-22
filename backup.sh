@@ -10,7 +10,7 @@ if [ -d "$DEST_DIR" ]; then
     mkdir "$DEST_DIR"
 fi
 
-sleep 45
+sleep 600
 
 while true
 do
