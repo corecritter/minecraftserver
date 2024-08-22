@@ -1,8 +1,9 @@
-docker build ./ -t 192.168.50.205:32000/mc:latest
-docker push 192.168.50.205:32000/mc:latest
+docker build ./ -t 192.168.50.203:32000/mc:latest
+docker push 192.168.50.203:32000/mc:latest
 
 kubectl delete namespace mc
 #kubectl delete pv ftp-pv
+./unclaimpvc.ps1
 
 kubectl apply -f ./kube/sc-nfs.yaml
 kubectl apply -f ./kube/namespace.yaml
