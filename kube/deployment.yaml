@@ -20,7 +20,7 @@ spec:
             memory: "5Gi"
         volumeMounts:
           - name: nfs-volume
-            mountPath: /var/backup
+            mountPath: /var/mcbackup
         ports:
         - containerPort: 25565
       volumes:

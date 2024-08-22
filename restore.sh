@@ -3,7 +3,7 @@
 echo "Attempting to restore from backup"
 
 # Source directory to check
-SOURCE_DIR="/var/backup"
+SOURCE_DIR="/var/mcbackup"
 
 # Destination directory
 DEST_DIR="/var/minecraft"
