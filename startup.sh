@@ -13,4 +13,5 @@ for filename in /var/settings/*; do
 done
 
 cd /var/minecraft
+ls -al
 /var/backup.sh & java -Xmx4096M -Xms4096M -jar server.jar && fg

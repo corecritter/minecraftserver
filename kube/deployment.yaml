@@ -25,5 +25,6 @@ spec:
         - containerPort: 25565
       volumes:
         - name: nfs-volume
+          #storageClassName: nfs-csi
           persistentVolumeClaim:
             claimName: nfs-pvc
