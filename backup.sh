@@ -24,5 +24,5 @@ do
         echo "Directory $SOURCE_DIR does not exist."
     fi
 
-    sleep 120
+    sleep 600
 done
