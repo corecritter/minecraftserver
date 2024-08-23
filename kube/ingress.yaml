@@ -15,4 +15,4 @@ spec:
             service:
               name: mc-app
               port: 
-                number: 25565
+                number: 30000
