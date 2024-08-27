@@ -1,5 +1,5 @@
-docker build ./ -t 192.168.50.203:32000/mc:latest
-docker push 192.168.50.203:32000/mc:latest
+docker build ./ -t 192.168.50.247:32000/mc:latest
+docker push 192.168.50.247:32000/mc:latest
 
 kubectl delete namespace mc
 #kubectl delete pv ftp-pv
