@@ -26,7 +26,9 @@ microk8s kubectl wait pod --selector app.kubernetes.io/name=csi-driver-nfs --for
 After getting everything setup, you need to change the IP address to point to your NFS file server in sc-nfs.yaml
 If running on Windows, change the IP address to your docker registry and run apply.ps1. Everything should now work and you can connect to your minecraft server at <yourIp>:30000
 
+You can also freely change any server settings, operators and whitelist options in /settings to configure the server
+
 NOTE: If exposing this to the internet (port forwarding), you may need to expose 25565 and map it to 30000 internally. That is what I did and outside users can just enter my ip without a port number
 
-If you're using docker desktop, add this (replace ip with the node's IP to your docker's insecure registries
-add this to DockerEngine settings "insecure-registries": ["192.168.50.17:32000"]
+If you're using docker desktop, add this to point to your insecure docker registry
+add this to DockerEngine settings "insecure-registries": ["<yourIp>:32000"]
