@@ -32,3 +32,5 @@ NOTE: If exposing this to the internet (port forwarding), you may need to expose
 
 If you're using docker desktop, add this to point to your insecure docker registry
 add this to DockerEngine settings "insecure-registries": ["<yourIp>:32000"]
+
+If getting Image Pull errors might need to uncheck the "use containerd for pulling and storing images" option in docker desktop

@@ -2,7 +2,7 @@
 
 /var/restore.sh
 
-curl https://piston-data.mojang.com/v1/objects/59353fb40c36d304f2035d51e7d6e6baa98dc05c/server.jar --output /var/install/server.jar
+curl https://piston-data.mojang.com/v1/objects/4707d00eb834b446575d89a61a11b5d548d8c001/server.jar --output /var/install/server.jar
 
 cp /var/install/eula.txt /var/minecraft/eula.txt
 
